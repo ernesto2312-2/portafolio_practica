@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta a Ernesto para proyectos de desarrollo web. Formulario de contacto, ubicación y datos de comunicación.">
+    <meta name="keywords" content="contacto, formulario, desarrollo web, presupuesto, consulta">
+    <meta name="author" content="Ernesto">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Contacto | Ernesto - Desarrollador Web">
+    <meta property="og:description" content="Ponte en contacto para tu próximo proyecto web.">
+    <meta property="og:type" content="website">
+    <title>Contacto | Ernesto - Desarrollador Web Full Stack</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span class="logo-text">Ernesto<span class="logo-accent">.dev</span></span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="about.html" class="nav-link">Sobre mí</a></li>
+                    <li><a href="services.html" class="nav-link">Servicios</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contacto</a></li>
+                    <li><a href="login.html" class="nav-link nav-cta">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Contacto</h1>
+                <p class="page-subtitle">¿Tienes un proyecto en mente? Hablemos sobre cómo puedo ayudarte.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2 class="contact-info-title">Información de contacto</h2>
+                        <p class="contact-info-text">Estoy disponible para nuevos proyectos, consultas y colaboraciones. No dudes en escribirme.</p>
+
+                        <div class="contact-detail">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong>Ubicación</strong>
+                                <p>Pinar del Río, Cuba</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <strong>Email</strong>
+                                <p>ernesto2312jqh@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="contact-icon">📱</span>
+                            <div>
+                                <strong>Teléfono</strong>
+                                <p>+52 (55) 1234-5678</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="contact-icon">🕐</span>
+                            <div>
+                                <strong>Horario</strong>
+                                <p>Lunes a Viernes: 9:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" action="#" method="POST" novalidate>
+                            <div class="form-group">
+                                <label for="nombre" class="form-label">Nombre completo</label>
+                                <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Tu nombre" required minlength="2" maxlength="100">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" class="form-input" placeholder="+52 (55) 0000-0000" pattern="[+0-9\s()-]{8,20}">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="servicio" class="form-label">Servicio de interés</label>
+                                <select id="servicio" name="servicio" class="form-input form-select" required>
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="sitio-estatico">Sitio web estático</option>
+                                    <option value="aplicacion-web">Aplicación web</option>
+                                    <option value="ecommerce">E-Commerce</option>
+                                    <option value="diseno-uiux">Diseño UI/UX</option>
+                                    <option value="mantenimiento">Mantenimiento web</option>
+                                    <option value="seo">SEO & Analítica</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="presupuesto" class="form-label">Presupuesto estimado</label>
+                                <select id="presupuesto" name="presupuesto" class="form-input form-select">
+                                    <option value="">Selecciona un rango</option>
+                                    <option value="bajo">Menos de $500</option>
+                                    <option value="medio">$500 - $1,000</option>
+                                    <option value="alto">$1,000 - $5,000</option>
+                                    <option value="muy-alto">Más de $5,000</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" class="form-input form-textarea" placeholder="Cuéntame sobre tu proyecto..." required minlength="10" maxlength="1000" rows="5"></textarea>
+                            </div>
+
+                            <div class="form-group form-checkbox-group">
+                                <input type="checkbox" id="terminos" name="terminos" class="form-checkbox" required>
+                                <label for="terminos" class="form-checkbox-label">Acepto la política de privacidad y el tratamiento de datos personales.</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-copy">&copy; 2026 Ernesto. Todos los derechos reservados.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="GitHub" class="social-link">GitHub</a>
+                    <a href="#" aria-label="LinkedIn" class="social-link">LinkedIn</a>
+                    <a href="#" aria-label="Twitter" class="social-link">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
