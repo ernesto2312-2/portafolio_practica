@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inicia sesión en tu cuenta de Ernesto.dev para gestionar tus proyectos web.">
+    <meta name="keywords" content="iniciar sesión, login, cuenta, acceso, desarrollo web">
+    <meta name="author" content="Ernesto">
+    <meta name="robots" content="noindex, nofollow">
+    <meta property="og:title" content="Iniciar sesión | Ernesto.dev">
+    <meta property="og:description" content="Accede a tu cuenta para gestionar tus proyectos.">
+    <meta property="og:type" content="website">
+    <title>Iniciar sesión | Ernesto.dev</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span class="logo-text">Ernesto<span class="logo-accent">.dev</span></span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="about.html" class="nav-link">Sobre mí</a></li>
+                    <li><a href="services.html" class="nav-link">Servicios</a></li>
+                    <li><a href="contact.html" class="nav-link">Contacto</a></li>
+                    <li><a href="login.html" class="nav-link nav-cta active">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="login-section">
+            <div class="container">
+                <div class="login-card">
+                    <div class="login-header">
+                        <h1 class="login-title">Bienvenido de nuevo</h1>
+                        <p class="login-subtitle">Ingresa tus credenciales para acceder a tu cuenta.</p>
+                    </div>
+
+                    <form class="login-form" action="#" method="POST" novalidate>
+                        <div class="form-group">
+                            <label for="login-email" class="form-label">Correo electrónico o usuario</label>
+                            <input type="text" id="login-email" name="login-email" class="form-input" placeholder="tu@email.com o usuario" required minlength="3" maxlength="100" autocomplete="username">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="login-password" class="form-label">Contraseña</label>
+                            <input type="password" id="login-password" name="login-password" class="form-input" placeholder="••••••••" required minlength="6" maxlength="50" autocomplete="current-password">
+                        </div>
+
+                        <div class="form-options">
+                            <div class="form-checkbox-group">
+                                <input type="checkbox" id="recordarme" name="recordarme" class="form-checkbox">
+                                <label for="recordarme" class="form-checkbox-label">Recordarme</label>
+                            </div>
+                            <a href="#" class="form-link">¿Olvidaste tu contraseña?</a>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">Iniciar sesión</button>
+                    </form>
+
+                    <div class="login-footer">
+                        <p class="login-footer-text">¿No tienes cuenta? <a href="contact.html" class="form-link">Regístrate</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-copy">&copy; 2026 Ernesto. Todos los derechos reservados.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="GitHub" class="social-link">GitHub</a>
+                    <a href="#" aria-label="LinkedIn" class="social-link">LinkedIn</a>
+                    <a href="#" aria-label="Twitter" class="social-link">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

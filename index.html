@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio profesional de Ernesto - Desarrollador Web Full Stack especializado en HTML, CSS, JavaScript y tecnologías modernas.">
+    <meta name="keywords" content="desarrollo web, portafolio, HTML, CSS, JavaScript, programación, full stack">
+    <meta name="author" content="Ernesto">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Ernesto | Desarrollador Web Full Stack">
+    <meta property="og:description" content="Portafolio profesional - Soluciones web modernas y creativas">
+    <meta property="og:type" content="website">
+    <title>Inicio | Ernesto - Desarrollador Web Full Stack</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span class="logo-text">Ernesto<span class="logo-accent">.dev</span></span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <li><a href="about.html" class="nav-link">Sobre mí</a></li>
+                    <li><a href="services.html" class="nav-link">Servicios</a></li>
+                    <li><a href="contact.html" class="nav-link">Contacto</a></li>
+                    <li><a href="login.html" class="nav-link nav-cta">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title animate-fade-in">
+                        Hola, soy <span class="text-gradient">Ernesto</span><br>
+                        Desarrollador Web Full Stack
+                    </h1>
+                    <p class="hero-subtitle animate-slide-up">
+                        Creo experiencias web modernas, accesibles y de alto rendimiento.
+                        Especializado en HTML semántico, CSS avanzado y JavaScript.
+                    </p>
+                    <div class="hero-actions animate-slide-up-delay">
+                        <a href="services.html" class="btn btn-primary">Ver servicios</a>
+                        <a href="contact.html" class="btn btn-secondary">Contáctame</a>
+                    </div>
+                </div>
+                <div class="hero-visual animate-fade-in-delay">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                        </div>
+                        <pre class="code-body"><code><span class="code-tag">&lt;div</span> <span class="code-attr">class</span>=<span class="code-string">"developer"</span><span class="code-tag">&gt;</span>
+  <span class="code-tag">&lt;h1&gt;</span>Hola, mundo<span class="code-tag">&lt;/h1&gt;</span>
+  <span class="code-tag">&lt;p&gt;</span>Construyendo la web del futuro<span class="code-tag">&lt;/p&gt;</span>
+  <span class="code-tag">&lt;button&gt;</span>Contáctame<span class="code-tag">&lt;/button&gt;</span>
+<span class="code-tag">&lt;/div&gt;</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">¿Qué puedo hacer por ti?</h2>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3 class="feature-title">Diseño UI/UX</h3>
+                        <p class="feature-desc">Interfaces intuitivas y atractivas que enamoran a los usuarios.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3 class="feature-title">Rendimiento</h3>
+                        <p class="feature-desc">Sitios optimizados que cargan rápido y funcionan fluido.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3 class="feature-title">Responsive</h3>
+                        <p class="feature-desc">Diseños que se adaptan perfectamente a cualquier dispositivo.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-copy">&copy; 2026 Ernesto. Todos los derechos reservados.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="GitHub" class="social-link">GitHub</a>
+                    <a href="#" aria-label="LinkedIn" class="social-link">LinkedIn</a>
+                    <a href="#" aria-label="Twitter" class="social-link">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
